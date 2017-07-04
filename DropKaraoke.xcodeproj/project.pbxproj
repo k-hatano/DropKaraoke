@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AE25E131F0B69F6002DA3DC /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 4AE25E0F1F0B69F6002DA3DC /* Makefile */; };
+		4AE25E151F0B69F6002DA3DC /* WavUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AE25E111F0B69F6002DA3DC /* WavUtil.c */; };
 		4AE906341F0B63E400D876EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE906331F0B63E400D876EE /* AppDelegate.m */; };
 		4AE906371F0B63E400D876EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE906361F0B63E400D876EE /* main.m */; };
 		4AE9063A1F0B63E400D876EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE906391F0B63E400D876EE /* ViewController.m */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AE25E0F1F0B69F6002DA3DC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4AE25E111F0B69F6002DA3DC /* WavUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = WavUtil.c; sourceTree = "<group>"; };
+		4AE25E121F0B69F6002DA3DC /* WavUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavUtil.h; sourceTree = "<group>"; };
 		4AE9062F1F0B63E400D876EE /* DropKaraoke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropKaraoke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE906321F0B63E400D876EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4AE906331F0B63E400D876EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,9 +45,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AE25E0E1F0B69F6002DA3DC /* VocalKiller */ = {
+			isa = PBXGroup;
+			children = (
+				4AE25E0F1F0B69F6002DA3DC /* Makefile */,
+				4AE25E111F0B69F6002DA3DC /* WavUtil.c */,
+				4AE25E121F0B69F6002DA3DC /* WavUtil.h */,
+			);
+			path = VocalKiller;
+			sourceTree = "<group>";
+		};
 		4AE906261F0B63E400D876EE = {
 			isa = PBXGroup;
 			children = (
+				4AE25E0E1F0B69F6002DA3DC /* VocalKiller */,
 				4AE906311F0B63E400D876EE /* DropKaraoke */,
 				4AE906301F0B63E400D876EE /* Products */,
 			);
@@ -151,9 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE25E131F0B69F6002DA3DC /* Makefile in Sources */,
 				4AE9063D1F0B63E400D876EE /* Document.m in Sources */,
 				4AE9063A1F0B63E400D876EE /* ViewController.m in Sources */,
 				4AE906371F0B63E400D876EE /* main.m in Sources */,
+				4AE25E151F0B69F6002DA3DC /* WavUtil.c in Sources */,
 				4AE906341F0B63E400D876EE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +322,7 @@
 				4AE906481F0B63E400D876EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

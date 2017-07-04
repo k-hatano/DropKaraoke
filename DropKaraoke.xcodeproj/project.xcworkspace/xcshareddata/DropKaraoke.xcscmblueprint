@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "92A77CF9AFACC75CE7A205C0E3255D26B37041CC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "92A77CF9AFACC75CE7A205C0E3255D26B37041CC" : 9223372036854775807,
+    "7FF08D6E0D9B03C057728D10D717216607F1B8BE" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5D058EFA-7F4E-4FA6-9C58-75BD6CED9375",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "92A77CF9AFACC75CE7A205C0E3255D26B37041CC" : "DropKaraoke\/",
+    "7FF08D6E0D9B03C057728D10D717216607F1B8BE" : "DropKaraoke\/VocalKiller\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DropKaraoke",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DropKaraoke.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/k-hatano\/VocalKiller.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7FF08D6E0D9B03C057728D10D717216607F1B8BE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/k-hatano\/DropKaraoke.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "92A77CF9AFACC75CE7A205C0E3255D26B37041CC"
+    }
+  ]
+}
