@@ -10,6 +10,7 @@
 
 @interface Document : NSDocument
 
+@property (nonatomic, weak) IBOutlet NSTextView *fileNameTextView;
 
 @end
 

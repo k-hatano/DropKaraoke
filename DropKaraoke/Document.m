@@ -12,6 +12,8 @@
 
 @interface Document ()
 
+@property (nonatomic, retain) NSString *filePath;
+
 @end
 
 @implementation Document
@@ -45,8 +47,13 @@
 
 - (BOOL)readFromURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError {
     NSString *path = [url path];
-    NSLog(@"%@", path);
     
+    self.filePath = path;
+    
+    return YES;
+}
+
+- (IBAction)removeVocal:(id)sender {
     StereoWAV inputWav;
     MonoWAV outputWav;
     unsigned int i;
@@ -54,11 +61,11 @@
     const char *importFileName;
     char *exportFileName;
     
-    importFileName = [path cStringUsingEncoding:NSASCIIStringEncoding];
+    importFileName = [self.filePath cStringUsingEncoding:NSASCIIStringEncoding];
     
     if (strstr(importFileName, ".wav") == NULL && strstr(importFileName, ".WAV") == NULL) {
         printf("Error: import file seems not to be a wav file \n");
-        return 0;
+        return;
     }
     
     exportFileName = calloc(strlen(importFileName) + 4, sizeof(char));
@@ -95,8 +102,6 @@
     free(inputWav.dataLeft);
     free(inputWav.dataRight);
     free(exportFileName);
-    
-    return YES;
 }
 
 
