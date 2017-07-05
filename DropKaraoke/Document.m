@@ -87,7 +87,7 @@
         outputWav.bps = inputWav.bps;
         outputWav.length = inputWav.length;
         
-        outputWav.data = calloc(outputWav.length, sizeof(float));
+        outputWav.data = calloc(outputWav.length, sizeof(double));
         
         printf("Generating wave data...\n");
         for (i = 0; i < outputWav.length; i++) {
