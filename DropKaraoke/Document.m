@@ -61,6 +61,9 @@
     const char *importFileName;
     char *exportFileName;
     
+    ViewController *viewController = self.windowControllers[0].contentViewController;
+    [viewController startConverting:self];
+    
     importFileName = [self.filePath cStringUsingEncoding:NSASCIIStringEncoding];
     
     if (strstr(importFileName, ".wav") == NULL && strstr(importFileName, ".WAV") == NULL) {
@@ -84,7 +87,7 @@
         outputWav.bps = inputWav.bps;
         outputWav.length = inputWav.length;
         
-        outputWav.data = calloc(outputWav.length, sizeof(double));
+        outputWav.data = calloc(outputWav.length, sizeof(float));
         
         printf("Generating wave data...\n");
         for (i = 0; i < outputWav.length; i++) {
@@ -99,9 +102,14 @@
         free(outputWav.data);
     }
     
+    NSString *fileName = [NSString stringWithCString:exportFileName encoding:NSASCIIStringEncoding];
+    [[NSWorkspace sharedWorkspace] selectFile:fileName inFileViewerRootedAtPath:@"/"];
+    
     free(inputWav.dataLeft);
     free(inputWav.dataRight);
     free(exportFileName);
+    
+    [self.windowControllers[0] close];
 }
 
 

@@ -24,4 +24,10 @@
 }
 
 
+- (IBAction)startConverting:(id)sender {
+    self.indicator.indeterminate = YES;
+    [self.indicator startAnimation:self];
+}
+
+
 @end

@@ -10,6 +10,9 @@
 
 @interface ViewController : NSViewController
 
+@property (nonatomic, weak) IBOutlet NSProgressIndicator *indicator;
+
+- (IBAction)startConverting:(id)sender;
 
 @end
 

@@ -7,10 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ViewController.h"
 
 @interface Document : NSDocument
 
-@property (nonatomic, weak) IBOutlet NSTextView *fileNameTextView;
+
 
 @end
 

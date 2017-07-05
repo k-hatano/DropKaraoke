@@ -251,6 +251,9 @@
                             </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="indicator" destination="ShL-OZ-FDx" id="IeN-vj-tIg"/>
+                    </connections>
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
